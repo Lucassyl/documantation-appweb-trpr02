@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TP2
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -52,3 +53,6 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+=======
+# appweb-trpr02
+>>>>>>> 5d7a6177b5c578ca2a2bcd7a0ea1a5fe871e2114
