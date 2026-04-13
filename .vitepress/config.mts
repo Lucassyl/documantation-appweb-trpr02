@@ -15,10 +15,10 @@ export default defineConfig({
       {
         text: 'Navigation',
         items: [
-          { text: 'Markdown Examples', link: '/Revue-code-Seance-1' },
-          { text: 'Markdown Examples', link: '/Revue-code-Seance-2' },
-          { text: 'Markdown Examples', link: '/Revue-code-Seance-3' },
-          { text: 'Markdown Examples', link: '/Revue-code-Seance-4' },
+          { text: 'Seance 1', link: '/Revue-code-Seance-1' },
+          { text: 'Seance 2', link: '/Revue-code-Seance-2' },
+          { text: 'Seance 3', link: '/Revue-code-Seance-3' },
+          { text: 'Seance 4', link: '/Revue-code-Seance-4' },
         ]
       }
     ],
