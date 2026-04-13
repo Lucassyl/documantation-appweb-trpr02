@@ -9,15 +9,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Navigation',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown Examples', link: '/Revue-code-Seance-1' },
+          { text: 'Markdown Examples', link: '/Revue-code-Seance-2' },
+          { text: 'Markdown Examples', link: '/Revue-code-Seance-3' },
+          { text: 'Markdown Examples', link: '/Revue-code-Seance-4' },
         ]
       }
     ],

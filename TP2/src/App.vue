@@ -15,11 +15,12 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
-  </header>-->
-  <header>
-    
   </header>
-
+  <div class="layout">
+    <main>
+      <RouterView />
+    </main>
+  </div>-->
   <RouterView />
 </template>
 
