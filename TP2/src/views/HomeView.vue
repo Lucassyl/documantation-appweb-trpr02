@@ -1,16 +1,48 @@
 <script setup lang="ts">
-import StartGame from '../components/StartGame.vue'
-import PokemonSelection from '../components/PokemonSelection.vue'
+import CommencerJeux from "../components/CommencerJeux.vue"
+import PokemonSelection from "../components/PokemonSelection.vue"
+
+import { ref, watch } from 'vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const selectedPokemonsIds = ref<number[]>([]);
+const playerName = ref('')
+
+function startGameSubmit(submittedName: string) {
+  playerName.value = submittedName;
+  if (selectedPokemonsIds.value.length === 0) {
+    alert('Veuillez sélectionner au moins un Pokémon')
+    return
+  } else {
+    //alert(selectedPokemonsIds.value + " " + playerName.value)
+  }
+  router.push({
+    name: 'game',
+    query: {
+      name: playerName.value,
+      ids: selectedPokemonsIds.value.join(',')
+    }
+  })
+}
 </script>
 
 <template>
   <main class="home">
     <section class="left">
-      <StartGame />
+      <CommencerJeux
+        @submit="startGameSubmit"
+        :disabled="selectedPokemonsIds.length === 0"
+      />
     </section>
-
     <section class="right">
-      <PokemonSelection />
+      <!--<PokemonSelection 
+        @update:selectedPokemonsIds="selectedPokemonsIds.value = $event"
+      />-->
+      <PokemonSelection 
+        v-model:selectedPokemonsIds="selectedPokemonsIds"
+      />
     </section>
   </main>
 </template>

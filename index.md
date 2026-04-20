@@ -22,9 +22,9 @@ hero:
       text: Séance 4
       link: /Revue-code-Seance-4
 
-#features:
-#  - title: Feature A
-#    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+features:
+  - title: Utilisation de l'IA
+    details: Prendre poou acquis que toute le css a été fait par chat GPT sauf dans les composants Popup
 #  - title: Feature B
 #    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 #  - title: Feature C
