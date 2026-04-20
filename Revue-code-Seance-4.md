@@ -14,6 +14,7 @@ Lister ce qui est bien dans le code :
 
 - Le jeux fonctione bien
 - L'affichage est bien fait 
+- Les composant sont bien séparer
 
 ---
 
@@ -33,6 +34,10 @@ Lister ce qui est bien dans le code :
         * PoPup.vue
         * PoPupFuir.vue
         * PoPupPokemonSelection.vue
+        * AffichageCompletDresseur
+        * AffichageDresseur
+        * AffichagePokemon
+        * AffichageSimplePokemon
     3. RankingView
         * Ranking.vue
     4. HomeView
@@ -44,9 +49,9 @@ Lister ce qui est bien dans le code :
         * ReUsableButton.vue
         * App.vue
     2. GameView
-        * PoPup
-        * PoPup
-        * PoPup
+        * Recit 12
+        * Recit 13
+        * Recit 14
 ---
 
 ## Lisibilité et maintenance
